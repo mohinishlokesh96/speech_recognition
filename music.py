@@ -8,8 +8,11 @@ def music_list():
 def playing_music():
     s.speak("Which music do you want me to play?. You can just say the number")
     number=s.wording()
-    if number == '1':
+    if number == '2':
         playsound.playsound("Voice packages\Star Wars\John Williams - Finale.mp3")
+    elif  number == '1':
+        playsound.playsound("Voice packages\Star Trek\Star Trek Main Theme.mp3")
+
 
 
 

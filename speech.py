@@ -14,7 +14,8 @@ def get_audio():
         audio = r.listen(source)
     try:
         word = r.recognize_google(audio)
-        return word
+        if word != None:
+            return word
     except Exception as e:
         print("None")
 
