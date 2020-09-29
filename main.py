@@ -5,7 +5,7 @@ import document_creation as d
 import random
 music_word_list = ['Music','MUSIC','music','MuSiC']
 time_word_list = ['Time','time','TIME','TiMe']
-random_greetings = ["Yooo! Wassup",'Hello','Hi','Good Morning','Hi,Its good to see you again']
+random_greetings = ['Hello','Hi','Good Morning','Hi,Its good to see you again']
 positive_notes = ['Yes','Ya Boi','yes','yo','hmmm']
 document_check = [ 'document',"Document",'file','File']
 if __name__=="__main__":
@@ -36,7 +36,8 @@ if __name__=="__main__":
             value =s.get_audio()
             if value in positive_notes:
                 d.get_type()
-
+        s.speak("I am sorry. But that command is still not in my library.")
+        s.speak("Your command is :"+word)
 
 
 
